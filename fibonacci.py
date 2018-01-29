@@ -1,4 +1,4 @@
-def fibonacci (n): #questa è la versione con il condizionale
+#def fibonacci (n): #questa è la versione con il condizionale
     if n == 0 or n == 1:
         return 1;
     else:
