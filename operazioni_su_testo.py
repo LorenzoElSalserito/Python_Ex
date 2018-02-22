@@ -16,6 +16,12 @@ def chiudi (stringa):
 	testo.close
 
 
+def leggi (stringa):
+	documento=testo.read ()
+	print (documento)
+
+
 crea_testo (testo)
 scrivi (testo)
+leggi (testo)
 chiudi (testo)
