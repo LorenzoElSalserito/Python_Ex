@@ -1,0 +1,12 @@
+def pariodispari():
+	inp = input ('Dammi un numero intero: ')
+	int numero = int (inp)
+	modulo =  numero % 2
+	if modulo == 0:
+		print ('numero Pari')
+	else:
+		print ('numero Dispari')
+
+
+if name == __main__:
+pariodispari(9)
