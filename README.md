@@ -1,2 +1,2 @@
 # Python-Excercise
-How_to_think_Ex
+This is a collection of my Python excercise
