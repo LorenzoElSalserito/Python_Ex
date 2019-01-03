@@ -1,18 +1,34 @@
-class ContoCorrente (nome, conto, saldo):
-    def __init__ (nome, conto, importo):
-        self.noime = nome
+class Conto:
+    def __init__ (nome, conto):
+        self.nome = nome
         self.conto = conto
-        self.saldo = saldo
+
+class ContoCorrente(Conto):
+    def __init__ (self, importo):
+        super().__init__(nome, conto)
+        self._saldo = importo
 
     def preleva (self, importo):
-        self.saldo = saldo-importo
+        self.saldo -= importo
 
     def deposita (self, importo):
-        self.saldo = saldo+importo
+        self.saldo += importo
 
     def descrizione (self):
         print ('Il proprietario del conto è ' self.nome, 'Con il Conto '
-               self.conto 'ed il Saldo è' self.saldo);
+               self.conto 'ed il Saldo è' self._saldo);
+
+@property
+    def saldo (self):
+        print ("In questo momento sono dentro il getter")
+        return self._saldo
+
+@saldo.setter
+    def saldo (self, importo)
+    print ("In questo momento sono dentro il setter")
+        self.preleva(self._saldo)
+        self.deposita(importo)
+
 c1=ContoCorrente ("Francesco", "10", 17000)
 c2=ContoCorrente ("Sara", "20", 29000)
 
