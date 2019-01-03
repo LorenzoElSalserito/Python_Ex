@@ -29,8 +29,24 @@ class ContoCorrente(Conto):
         self.preleva(self._saldo)
         self.deposita(importo)
 
-c1=ContoCorrente ("Francesco", "10", 17000)
-c2=ContoCorrente ("Sara", "20", 29000)
+class GestoreContiCorrenti:
+    @staticmethod
+    def bonifico(contosorgente, contodestinatario, trasferimento)
+        contosorgente.preleva(trasferimento)
+        contodestinatario.deposita(trasferimento)
+
+
+c1 = ContoCorrente ("Antonio", "10", 50000)
+c2 = ContoCorrente ("Sandra", "20", 90000)
+
+c1.descrizione
+c2.descrizione
+
+GestoreContiCorrenti.bonifico(c1, c2, 1000)
+
+c1.descrizione
+c2.descrizione
+
 
 c1.descrizione()
 c2.descrizione()
